@@ -1,8 +1,10 @@
 #include<stdio.h>
-/*This program is printing out a text using puts*/
+/**
+ * main - Entry point
+ * return: Always 0 (success)
+ */
 int main(void)
 {
-	char str[] = "\"Programming is like building a multilingual puzzle";
-	puts(str);
+	puts( "\"Programming is like building a multilingual puzzle");
 	return (0);
 }
