@@ -12,10 +12,10 @@ int main(void)
 	{
 		for (m = 48; m <= 57; m++)
 		{
-			if (m < n)
+			if (m > n)
 			{
-				putchar(m);
 				putchar(n);
+				putchar(m);
 				putchar(',');
 				putchar(' ');
 			}
