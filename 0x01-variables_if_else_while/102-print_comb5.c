@@ -8,7 +8,7 @@ int main(void)
 	int a;
 	int b;
 	int c = 0;
-	
+
 	for (a = 0; a <= 99; a++)
 	{
 		for (b = 0; b <= 99; b++)
@@ -19,13 +19,13 @@ int main(void)
 				{
 					putchar((c % 10) + '0');
 				}
-				putchar((a % 10) + '0');
+				putchar((a % 100) + '0');
 				putchar(' ');
 				if (b < 10)
 				{
 					putchar((c % 10) + '0');
 				}
-				putchar((b % 10) + '0');
+				putchar((b % 100) + '0');
 				putchar(',');
 				putchar(' ');
 			}
@@ -33,6 +33,4 @@ int main(void)
 	}
 	putchar('\n');
 	return (0);
-}
-
-					
+}					
