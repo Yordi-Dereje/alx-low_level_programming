@@ -14,8 +14,8 @@ int main(void)
 		{
 			if (m < n)
 			{
-				putchar(m);
 				putchar(n);
+				putchar(m);
 				putchar(',');
 				putchar(' ');
 			}
