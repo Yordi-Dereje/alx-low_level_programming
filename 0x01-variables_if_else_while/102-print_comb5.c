@@ -7,7 +7,6 @@ int main(void)
 {
 	int a;
 	int b;
-	int c = 0;
 
 	for (a = 0; a <= 99; a++)
 	{
