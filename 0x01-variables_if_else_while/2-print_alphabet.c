@@ -5,9 +5,9 @@
  */
 int main(void)
 {
-	for (char n = 'a'; n <= 'z'; n++)
-	{
-		putchar(n);
-	}
+	char n;
+
+	for (n = 'a'; n <= 'z'; n++)
+		putchar("%c", c);
 	return (0);
 }
