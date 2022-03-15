@@ -1,4 +1,4 @@
-#include<stdio>
+#include<main.h>
 /**
  * main - pritning _putchar
  * Return: Always 0 (Success)
