@@ -1,9 +1,9 @@
-#include<main.h>
+#include "main.h"
 /**
- * main - pritning _putchar
+ * main - printing _putchar
  * Return: Always 0 (Success)
  */
-int main()
+int main(void)
 {
 	char a[] = "_putchar";
 
