@@ -5,6 +5,14 @@
  */
 int main()
 {
-	write(1,"_putchar\n",10);
+	char a[] = "_putchar";
+
+	int b;
+
+	for (i=0; i<8; i++)
+	{
+		_putchar(a[i]);
+	}
+	_putchar('\n');
 	return (0);
 }
