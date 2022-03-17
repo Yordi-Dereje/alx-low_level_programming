@@ -3,7 +3,7 @@
 /**
  * print_line - draw straight line
  * 
- * @n: variable
+ * @n: variable for length
  * 
  * Return: nothing
  */
