@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * main - check if upper
- * Return: 0 and 1
+ * _isupper - print upper case
+ * Return: nothing
  */
 
 int _isupper(int c)
