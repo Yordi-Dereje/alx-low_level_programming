@@ -5,15 +5,11 @@
  */
 void print_triangle(int size)
 {
-	int a;
-
-	int b;
-
-	int c;
+	int a,b,c;
 
 	if (size > 0)
 	{
-		for (a = 1; a <= size; a++)
+		for (a = 0; a < size; a++)
 		{
 			for (b = size - a; b > 1; b--)
 				_putchar(' ');
