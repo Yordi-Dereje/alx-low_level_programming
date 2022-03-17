@@ -1,15 +1,14 @@
 #include "main.h"
 /**
- * print_diagonal - diagonal line
- * 
- * @n: variable
+ * print_diagonal - Function to print a diagonal line of n length
  *
- * Return: nothing
+ * @n: Variable for length of line
+ *
+ * Return: Always 0.
  */
 void print_diagonal(int n)
 {
 	char a;
-
 	char b;
 
 	if (n > 0)
