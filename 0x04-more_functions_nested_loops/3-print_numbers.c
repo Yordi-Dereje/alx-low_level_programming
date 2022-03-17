@@ -8,8 +8,7 @@ void print_numbers(void)
 {
 	int a;
 
-	if (a = 48; a <=58; a++)
+	if (a = 48; a <= 58; a++)
 		_putchar(a);
 	_putchar('\n');
 }
-
