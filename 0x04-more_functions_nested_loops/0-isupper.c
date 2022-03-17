@@ -5,7 +5,8 @@
  */
 int _isupper(int c)
 {
-	char cap = "
-
 	if (c >=65 && c <=90)
-		_putchar(
+		return (1);
+	else
+		return (0);
+}
