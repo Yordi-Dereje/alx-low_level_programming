@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
- * main - fizz on multiple of 3
- * Return: 0
+ * main - main program
+ *
+ * Return: Always 0
  */
 int main(void)
 {
