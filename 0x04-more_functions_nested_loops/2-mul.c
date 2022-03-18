@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * mul - multiply variables
- * 
- * @a: variable 1
- * @b: variable 2
- * 
- * Return: the produce
+ * mul - Function to multiply two variables
+ *
+ * @a: Variable 1
+ * @b: Variable 2
+ *
+ * Return: Product of the two variables.
  */
 int mul(int a, int b)
 {
