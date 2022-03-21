@@ -10,7 +10,7 @@ void puts2(char *str)
 {
 	int a = 0;
 	int i;
-	
+
 	while (str[a] != '\0')
 	{
 		a++;
@@ -19,7 +19,7 @@ void puts2(char *str)
 	for (i = 0; i < a; i++)
 	{
 		if (i % 2 == 0)
-			_putchar(str[a]);
+			_putchar(str[i]);
 	}
 	_putchar('\n');
 }
