@@ -8,13 +8,12 @@
  */
 void rev_string(char *s)
 {
-	int a = 0;
+	int a;
 	int i;
 	char temp;
 
-	while (*s != 0)
+	for (a = 0; s[a] != 0; )
 	{
-		s++;
 		a++;
 	}
 
