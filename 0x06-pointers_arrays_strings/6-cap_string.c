@@ -19,8 +19,8 @@ char *cap_string(char *str)
 		{
 			case ',': case ';': case '.': case '!': case '?':
 			case '"': case '(': case ')': case '{': case '}':
-				if (str[i + 2] >= 'a' && str[i + 2] <= 'z')
-					str[i + 2] = str[i + 2] - 32;
+				if (str[i + 1] >= 'a' && str[i + 1] <= 'z')
+					str[i + 1] = str[i + 1] - 32;
 		}
 	}
 	return (str);
