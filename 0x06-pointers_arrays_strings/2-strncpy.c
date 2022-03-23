@@ -6,6 +6,8 @@
  *
  * @src: source string
  *
+ * @n: size of the source string
+ *
  * return: the pasted dest string
  */
 char *_strncpy(char *dest, char *src, int n)
