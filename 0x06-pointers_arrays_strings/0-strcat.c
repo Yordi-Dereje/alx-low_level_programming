@@ -3,10 +3,9 @@
  * _strcat - a function that appends src to dest
  *
  * @dest: destination string
- *
  * @src: source string
  *
- * return: the appended string
+ * Return: the appended string
  */
 char *_strcat(char *dest, char *src)
 {
@@ -14,8 +13,9 @@ char *_strcat(char *dest, char *src)
 	int b = 0;
 
 	while (dest[a] != '\0')
+	{
 		a++;
-
+	}
 	while (src[b] != '\0')
 	{
 		dest[a] = src[b];
