@@ -4,7 +4,7 @@
  *
  * @str: the string
  *
- * return: the string which is all now in cap
+ * Return: the string which is all now in cap
  */
 char *string_toupper(char *str)
 {
@@ -15,5 +15,6 @@ char *string_toupper(char *str)
 		if (str[a] >= 'a' && str[a] <= 'z')
 			str[a] = str[a] - 32;
 	}
+
 	return (str);
 }
