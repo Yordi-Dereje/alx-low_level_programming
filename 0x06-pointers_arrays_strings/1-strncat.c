@@ -7,7 +7,7 @@
  *
  * @n: byte used from src
  *
- * return: the appended dest
+ * Return: the appended dest
  */
 char *_strncat(char *dest, char *src, int n)
 {
