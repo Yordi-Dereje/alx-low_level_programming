@@ -6,7 +6,7 @@
  *
  * @s2: string 2
  *
- * return: the answer ig
+ * Return: the answer ig
  */
 int _strcmp(char *s1, char *s2)
 {
@@ -18,5 +18,6 @@ int _strcmp(char *s1, char *s2)
 			return (s1[i] - s2[i]);
 		i++;
 	}
+
 	return (0);
 }
