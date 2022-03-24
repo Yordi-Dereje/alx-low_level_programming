@@ -4,7 +4,7 @@
  *
  * @str: the input string
  *
- * return: the encoded string
+ * Return: the encoded string
  */
 char *leet(char *str)
 {

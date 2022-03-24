@@ -4,7 +4,7 @@
  *
  * @str: the input string
  *
- * return: the capitalized string
+ * Return: the capitalized string
  */
 char *cap_string(char *str)
 {
