@@ -1,1 +1,1 @@
-a read me for the 0x06 project
+a read me on 0x06
