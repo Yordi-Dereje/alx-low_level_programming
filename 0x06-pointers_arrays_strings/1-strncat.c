@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * _strncat - a function to append src until n on src
- * @dest: destination string
  *
+ * @dest: destination string
  * @src: source string
  *
  * @n: byte used from src
@@ -14,7 +14,6 @@ char *_strncat(char *dest, char *src, int n)
 
 	while (dest[a] != '\0')
 		a++;
-
 	while (b < n && src[b] != '\0')
 	{
 		dest[a] = src[b];
