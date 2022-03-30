@@ -1,31 +1,40 @@
 #include "main.h"
 /**
- * _sqrt_recursion - a function that returns the square root of a number
- * sqrt - a function that does the recursion
- *
- * @n: the passed value
- * @l: low value
- * @h: high value
- *
- * Return: if no sqrt, -1. Else the sqrt.
- */
-int sqrt(int l, int h, int n)
+ * sqtRecursive - computes square root recursively doing binary search
+ * @start: inital number
+ * @end: last number within the limit of number
+ * @m: given number
+ * Return: 1 if not found sqrroot, else sqrroot
+ **/
+int sqtRecursive(int start, int end, int m)
 {
-	int m = (l + h) / 2;
+	long mid;
 
-	if ((m * m <= n) && ((m + 1) * (m + 1) > n))
-		return (m);
-	else if (mid * mid > n)
-		return sqrt (m + 1, h, n);
-	else
-		return sqrt (l, m - 1, n);
+	if (end >= start)
+	{
+		mid = start + (end - start) / 2;
+		if (mid * mid == m)
+			return (mid);
+
+
+
+		if (mid * mid > m)
+			return (sqtRecursive(start, mid - 1, m));
+		if (mid * mid < m)
+			return (sqtRecursive(mid + 1, end, m));
+	}
+	return (-1);
 }
-int _sqrt_recursion(int n)
+/**
+ * _sqrt_recursion - finds the natural square root of a number
+ * @n: given number
+ * Return: square root of n or -1
+ **/
+	int _sqrt_recursion(int n)
 {
 	if (n < 0)
 		return (-1);
 	if (n == 0 || n == 1)
 		return (n);
-	return (sqrt (0, n, n));
-
+	return (sqtRecursive(2, n, n));
 }
