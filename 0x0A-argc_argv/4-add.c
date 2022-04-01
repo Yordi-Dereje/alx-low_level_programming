@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
-		if(isdigit(argv[i]) == 1)
+		if(isdigit(argv[i]))
 			a = a + atoi(argv[i]);
 		else
 		{
