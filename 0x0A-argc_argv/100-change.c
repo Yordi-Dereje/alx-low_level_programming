@@ -28,20 +28,20 @@ int main(int argc, char *argv[])
 			continue;
 		}
 		if ((a - 10) >= 0)
-                {
-                        a -= 10;
-                        continue;
-                }
+		{
+			a -= 10;
+			continue;
+		}
 		if ((a - 5) >= 0)
-                {
-                        a -= 5;
-                        continue;
-                }
+		{
+			a -= 5;
+			continue;
+		}
 		if ((a - 2) >= 0)
-                {
-                        a -= 2;
-                        continue;
-                }
+		{
+			a -= 2;
+			continue;
+		}
 		a--;
 	}
 	printf("%d\n", b);
