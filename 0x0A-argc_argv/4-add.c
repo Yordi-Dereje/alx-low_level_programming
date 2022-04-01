@@ -1,25 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-/**
- * isdigit - checks if the recieved values are numbers
- * @s: input string
- * Return: 0 if not digit, 1 if so
- */
-int isdigit(char *s)
-{
-	int i = 0;
-	int j = strlen(s);
-
-	while (i < j)
-	{
-		if (s[i] < '0' || s[i] > '9')
-			return (0);
-		else
-			i++;
-	}
-	return (1);
-}
 /**
  * main - adds positive numbers
  * @argc: the count
@@ -30,16 +10,19 @@ int main(int argc, char *argv[])
 {
 	int a = 0;
 	int i;
+	int j;
 
 	for (i = 1; i < argc; i++)
 	{
-		if (isdigit(argv[i]))
-			a += atoi(argv[i]);
-		else
+		for (j = 0; argv[i][j]; j++)
 		{
-			printf("Error\n");
-			return (1);
+			if (argv[i][j] < '0' || argv[i][j] > '9')
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
+		a += atoi(argv[i]);
 	}
 	printf("%d\n", a);
 	return (0);
