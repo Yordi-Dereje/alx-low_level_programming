@@ -9,18 +9,20 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *con;
-	int a;
-	int b;
+	int a = 0;
+	int b = 0;
 
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	for (a = 0; s1[a] != '\0'; a++);
-	for (b = 0; s2[b] != '\0'; b++);
+	while (s1[a] != '\0')
+		a++;
+	while (s2[b] != '\0')
+                b++;
 	b += 1;
 	a += b;
-	con = malloc (a * sizeof(char));
+	con = malloc(a * sizeof(char));
 	if (con == NULL)
 		return (NULL);
 	for (a = 0; s1[a] != '\0'; a++)
