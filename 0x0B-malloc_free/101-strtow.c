@@ -40,7 +40,7 @@ char **strtow(char *str)
 	int a = 0;
 	int b;
 
-	while(str[l] != '\0')
+	while (str[l] != '\0')
 		l++;
 	words = counter(str);
 	if (words == 0)
@@ -53,7 +53,7 @@ char **strtow(char *str)
 	{
 		if (str[i] == ' ' || str[i] == '\0')
 		{
-			if(j)
+			if (j)
 			{
 				b = i;
 				ar1d = (char *) malloc(sizeof(char) * (j + 1));
