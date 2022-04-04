@@ -9,7 +9,6 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *con;
-	int i;
 	int a;
 	int b;
 
