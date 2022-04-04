@@ -46,7 +46,7 @@ char **strtow(char *str)
 	if (words == 0)
 		return (NULL);
 	words += 1;
-	ar2d = (char **) malloc(sizeof(char *) * (words);
+	ar2d = (char **) malloc(sizeof(char *) * (words));
 	if (ar2d == NULL)
 		return (NULL);
 	for (i = 0; i <= l; i++)
