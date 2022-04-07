@@ -5,6 +5,7 @@
  * @s1: first passed string
  * @s2: second passed string
  * @n: the amount of s2 that is concatenated
+ * Return: the newly appointed pointer or null
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
