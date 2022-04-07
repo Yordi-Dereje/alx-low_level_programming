@@ -6,8 +6,8 @@
  */
 void *malloc_checked(unsigned int b)
 {
-	unsigned int *a;
+	void *a;
 
-	a = malloc(size0f(*a) * b);
+	a = malloc(b);
 	return (a);
 }
