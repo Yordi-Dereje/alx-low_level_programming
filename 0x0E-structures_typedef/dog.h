@@ -16,13 +16,8 @@ struct dog
 };
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
-/**
- * struct dog_t - a structure for dog_t entity
- * @name: attribute one
- * @age: attribute two
- * @owner: attribute three
- */
+
 typedef struct dog dog_t;
-dog_t *new_dog(char *name,float age,char *owner);
+//dog_t *new_dog(char *name,float age,char *owner);
 
 #endif
