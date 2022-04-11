@@ -22,11 +22,7 @@ void print_dog(struct dog *d);
  * @age: attribute two
  * @owner: attribute three
  */
-struct dog_t
-{
-	char *name;
-	float age;
-	char *owner;
-};
+typedef struct dog dog_t;
+dog_t *new_dog(char *name,float age,char *owner);
 
 #endif
