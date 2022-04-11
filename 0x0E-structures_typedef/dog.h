@@ -2,6 +2,7 @@
 #define DOG_H
 
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * struct dog - a structure for dog entity
  * @name: attribute one
