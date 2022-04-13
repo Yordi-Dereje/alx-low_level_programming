@@ -2,7 +2,7 @@
 #include "function_pointers.h"
 /**
  * int_index - a function that searches for an integer
- * @array: the passed values
+ * @array: the passed arrays
  * @size: the number of elements in the array
  * @cmp: pointer to a function used to compare values
  * Return: -1 for no match, -1 for size less than 0 and if successful 0
