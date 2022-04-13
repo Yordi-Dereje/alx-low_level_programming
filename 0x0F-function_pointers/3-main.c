@@ -7,11 +7,33 @@
  */
 int main(int argc, int *argv[])
 {
+	int a;
+	int b;
+	int r;
+	char c;
+	int (*func)(int, int);
+
 	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
-	printf("%d\n", get_op_func(argv[2])(atoi(argv[1]), atoi(argv[3])));
+	a = atoi(argv[1]);
+	b = atoi(argv[3]);
+	func = get_op_func(argv[2]);
+
+	if (!func)
+	{
+		printf("Error\n");
+		exit(99);
+	}
+	c = *argv[2];
+	if ((c == '/' || c =='%') && b == 0)
+	{
+		printf("Error\n");
+		exit(100);
+	}
+	r = func(a, b);
+	printf("%d\n", r);
 	return (0);
 }
