@@ -4,6 +4,11 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+/**
+ * struct op - a struct with the tag op
+ * @op: the operator
+ * @f: the associated function
+ */
 typedef struct op
 {
 	char *op;
