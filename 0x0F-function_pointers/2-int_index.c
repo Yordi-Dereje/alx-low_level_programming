@@ -5,7 +5,7 @@
  * @array: the passed values
  * @size: the number of elements in the array
  * @cmp: pointer to a function used to compare values
- * Return: no match -1, size less than 0 -1 and 0 if successful
+ * Return: -1 for no match, -1 for size less than 0 and if successful 0
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
@@ -16,7 +16,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 	for (i = 0; i < size; i++)
 	{
 		if (cmp(array[i] != 0)
-				return (i);
+			return (i);
 	}
 	return (-1);
 }
