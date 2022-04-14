@@ -1,3 +1,4 @@
+#include "3-calc.c"
 #include <stdio.h>
 /**
  * op_add - a function to return the sum of 2 numbers
@@ -10,20 +11,20 @@ int op_add(int a, int b)
 	return (a + b);
 }
 /**
- * op_sub - a function to return the subtraction of 2 numbers
+ * op_sub - a function to return the difference of 2 numbers
  * @a: first integer
  * @b: second integer
- * Return: the subtraction of the 2 numbers
+ * Return: the difference of the 2 numbers
  */
 int op_sub(int a, int b)
 {
 	return (a - b);
 }
 /**
- * op_mul - a function to return the multiplication of 2 numbers
+ * op_mul - a function to return the product of 2 numbers
  * @a: first integer
  * @b: second integer
- * Return: the multiplication of the 2 numbers
+ * Return: the product of the 2 numbers
  */
 int op_mul(int a, int b)
 {

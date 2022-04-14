@@ -10,9 +10,9 @@
  */
 int main(int argc, char *argv[])
 {
-	int result;
-	int num1;
-	int num2;
+	int result = 0;
+	int num1 = 0;
+	int num2 = 0;
 	int (*func)(int, int);
 
 	if (argc < 4 || argv[1] == NULL || argv[3] == NULL)
