@@ -2,6 +2,7 @@
 #define LISTS_H
 
 int _putchar(char c);
+#include <stddef.h>
 /**
  * struct list_s - singly linked list
  * @str: string - (malloc'ed string)
