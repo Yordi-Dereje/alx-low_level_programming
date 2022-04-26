@@ -25,20 +25,20 @@ size_t len(const listint_t *head)
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
 	unsigned int a = 0;
-	listint_t *new = *i
+	listint_t *new = *i;
 	listint_t *new = *j;
 
 	if (index > len(*head))
 		return (-1);
 
-	if (new && index == 0)
+	if (new && (index == 0))
 	{
 		*head = new->next;
 		free(new);
 		return (1);
 	}
 
-	while (new && a < index)
+	while (new && (a < index))
 	{
 		node = new;
 		new = new->next;
