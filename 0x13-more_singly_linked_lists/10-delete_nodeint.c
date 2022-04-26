@@ -9,7 +9,7 @@ size_t len(const listint_t *head)
 {
 	unisgned int i = 0;
 
-	while (h != NULL)
+	if(!h)
 	{
 		i++;
 		head = head->next;
