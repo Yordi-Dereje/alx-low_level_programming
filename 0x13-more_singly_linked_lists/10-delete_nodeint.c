@@ -1,54 +1,39 @@
 #include "lists.h"
 #include <stdlib.h>
 /**
- * len - a function that counts the number of elements in the list
- * @head: the passed head
- * Return: the count
- */
-size_t len(const listint_t *head)
-{
-	unisgned int i = 0;
-
-	while(h)
-	{
-		i++;
-		head = head->next;
-	}
-	return (i);
-}
-/**
  * delete_nodeint_at_index - deletes the node at the index index at the list
  * @head: the passed head
  * @index: the index of the node to be deleted
- * Return: 1 if successful and -1 if failed
+ * Return: 1 if successful and -1 if not
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-	unsigned int a = 0;
-	listint_t *new = *i;
-	listint_t *new = *j;
+	unsigned int count;
+	listint_t *next_node, *temp;
 
-	if (index > len(*head))
+	temp = *head;
+	count = 0;
+
+	if (*head == NULL)
 		return (-1);
-
-	if (new && (index == 0))
+	if (index == 0)
 	{
-		*head = new->next;
-		free(new);
+		*head = temp->next;
+		free(temp);
 		return (1);
 	}
 
-	while (new && (a < index))
+	while (temp != NULL && count < index - 1)
 	{
-		node = new;
-		new = new->next;
-		a++;
+		temp = temp->next;
+		count++;
+		if (temp == NULL || temp->next == NULL)
+			return (-1);
 	}
 
-	if (!new)
-		return (-1);
+	next_node = temp->next->next;
+	free(temp->next);
+	temp->next = next_node;
 
-	node->next = new->next;
-	free(new);
 	return (1);
 }
