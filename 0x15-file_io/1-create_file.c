@@ -1,10 +1,9 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
-
 #include <unistd.h>
 #include <stdlib.h>
-#include "holberton.h"
+#include "main.h"
 /**
  * create_file - creates a file.
  * @filename: Name of the file to create.
